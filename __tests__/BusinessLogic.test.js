@@ -149,6 +149,7 @@ describe('Business Logic Verification', () => {
                 body: {
                     child_id: mockChildId,
                     app_name: 'YouTube',
+                    package_name: 'com.youtube',
                     minutes: 30
                 }
             }));
