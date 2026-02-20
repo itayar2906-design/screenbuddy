@@ -24,8 +24,8 @@ const GimiCharacter = ({ mood, dialogue, position, style }) => {
     }, []);
 
     const getGimiImage = () => {
-        // For now, use placeholder. Will be replaced with actual GIMI image
-        return require('../../assets/gimi/gimi_base.png');
+        // Using a remote placeholder since local assets might be missing
+        return { uri: 'https://placehold.co/200x200?text=GIMI' };
     };
 
     const containerStyle = position === 'fullscreen'
